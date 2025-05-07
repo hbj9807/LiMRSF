@@ -2,7 +2,6 @@
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()  
 [![License](https://img.shields.io/badge/license-MIT-blue)]()  
-[![Git LFS](https://img.shields.io/badge/Git%20LFS-enabled-blue)]()
 
 ## Table of Contents
 
