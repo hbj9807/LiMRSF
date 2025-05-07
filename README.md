@@ -35,13 +35,24 @@ Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (.ply) wit
 - Install ROS-TCP-Endpoint 
 - git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
 
-2. Unity //
+
+2. Unity
+
+
 2.1 Install Unity 2020.3.42f1
 
+
 2.2 Install ROS-TCP-Connector
+
+
 2.2.1 Using Unity 2020.2 or later, open the Package Manager from "Window" -> "Package Manager".
+
+
 2.2.2 In the Package Manager window, find and click the "+" button in the upper lefthand corner of the window. Select "Add package from git URL...."
+
+
 2.2.3 Enter https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
+
 
 ## Contributing
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (Grant No. 2022M1A3C2085237). 
