@@ -11,3 +11,4 @@
 !/ProjectSettings/**
 !/Packages
 !/Packages/**
+/Packages/catkin_ws/
