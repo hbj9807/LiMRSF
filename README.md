@@ -70,6 +70,8 @@ hl2ss by jdibenes
 https://github.com/jdibenes/hl2ss
 
 ## License
+This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
+
 
 ## Contact
 Hanbeom Chang - hanbeom.chang@stonybrook.edu
