@@ -20,14 +20,21 @@ Main objective is to
 - ROS-TCP Server for data transfer
 - Reduce time for site revisit
 
-## Our Paper
+### Our Paper
+Please read our paper for detail information.
+
+
 https://arxiv.org/abs/2411.12514
 
-## Our Videos
+### Our Videos
+A demo video of our paper.
+
 https://youtu.be/lripMy5RFcs?si=oT9suaIcNXGKk_XV
 
 ## Features
 Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (.ply) with detected blind spots.
+- ROS: Opens ROS-TCP server and transfer data (blind spot highlighted mesh)
+- Unity: Deployed in app for visualizing highlighted mesh in holograms
 
 ## Prerequisites & Installation
 1. ROS
@@ -53,8 +60,14 @@ Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (.ply) wit
 2.2.3 Enter https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
 
 
+2.3 Install MRTK 2
+
+
 ## Contributing
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (Grant No. 2022M1A3C2085237). 
+
+hl2ss by jdibenes
+https://github.com/jdibenes/hl2ss
 
 ## License
 
