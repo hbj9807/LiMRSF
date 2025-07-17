@@ -1,7 +1,15 @@
-# LiMRSF
+# LiMRSF (LiDAR-MR-RGB Sensor Fusion)
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()  
 [![License](https://img.shields.io/badge/license-MIT-blue)]()  
+
+## Abstract
+**Authors**: `Hanbeom Chang` | `Jongseong Brad Choi` | `Chul Min Yeum`\
+Indoor SLAM often suffers from issues such as scene drifting, double walls, and blind spots, particularly in confined spaces with objects close to the sensors (e.g., LiDAR and cameras) in reconstruction tasks. While real-time visualization of point cloud registration during data collection can mitigate these issues, conventional approaches lack the capability for in-depth, on-site comparison between the reconstructed data and the physical environment, often necessitating repeated rescans. To address this, we developed the LiMRSF (LiDAR-MR-RGB Sensor Fusion) system, which integrates precise sensor fusion with mixed-reality visualization to provide immediate, intuitive feedback. The system generates accurate colorized point cloud maps and reconstructs detailed 3D meshes using Poisson Surface Reconstruction, automatically highlighting under-sampled (blind spot) regions. These holographic representations are transmitted via a TCP-based network to an MR headset, enabling users to verify and correct errors in real time. In addition, an iterative feedback loop—augmented by an ICP-based alignment process that integrates newly scanned data with previous acquisitions—reinforces the dataset, substantially reducing blind spot prevalence. Experimental results demonstrate robust performance with an F1 Score of 75.76%, high Recall, and enhanced structural fidelity (with the highest SSIM of 0.5619, PSNR of 14.1004, and lowest MSE of 0.0389 in selected model sections). This comprehensive approach ensures the creation of high-quality 3D datasets for applications in Building Information Modeling and beyond.
+
+The paper can be found in [Arxiv](https://arxiv.org/abs/2411.12514).
+
+A demo video can be found in our [Youtube](https://youtu.be/lripMy5RFcs?si=86RJgNUZksLTAuX1)
 
 ## Table of Contents
 
@@ -12,67 +20,64 @@
 5. [License](#license)  
 6. [Contact](#contact)
 
-## Description
-LiMRSF (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D mesh on top of Mixed Reality Headset in real-time to detect blind spot in SLAM process and feedback intuitively to the user.
+## 1. Description
+Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D mesh on top of Mixed Reality Headset (HoloLens 2) in real-time to detect blind spot in SLAM process and feedback intuitively to the user.
 
-Main objective is to
+`Main objective` is to
 - Point cloud registration error visualization
 - ROS-TCP Server for data transfer
 - Reduce time for site revisit
 
-### Our Paper
-Please read our paper for detail information.
+## 2. Features
+Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (`.ply`) with detected blind spots.
+- **ROS**: Opens ROS-TCP server and transfer data (blind spot highlighted mesh)
+- **Unity**: Deployed in app for visualizing highlighted mesh in holograms
 
+## 3. Prerequisites & Installation
 
-https://arxiv.org/abs/2411.12514
+### **3.1. Hardware**
 
-### Our Videos
-A demo video of our paper.
+`MR Headset`: Microsoft HoloLens 2  
+`LiDAR`: Ouster OS0-32  
+`IMU`: Built-in LiDAR in Ouster LiDAR  
+`Camera`: FLIR Blackfly S
 
-https://youtu.be/lripMy5RFcs?si=oT9suaIcNXGKk_XV
+### **3.2. Software** 
 
-## Features
-Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (.ply) with detected blind spots.
-- ROS: Opens ROS-TCP server and transfer data (blind spot highlighted mesh)
-- Unity: Deployed in app for visualizing highlighted mesh in holograms
+**OS #1**: `Ubuntu 20.04`, ROS 1 `Noetic`  
+**Drivers**: [Ouster Driver, Official](https://github.com/ouster-lidar/ouster-ros), [FLIR Driver, ros-drivers](https://github.com/ros-drivers/flir_camera_driver/tree/noetic-devel)  
+**Calibration**: [LiDAR-Camera Calibration, Koide3](https://github.com/koide3/direct_visual_lidar_calibration)  
+**Color Mapping**: [R3LIVE, hku-mars](https://github.com/hku-mars/r3live)  
 
-## Prerequisites & Installation
-1. ROS
-- Install ROS-TCP-Endpoint 
-- git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git
+**OS #2**: `Windows 10`  
+`Download #1`: **Visual Studio 2019**  
+Select `.Net desktop development`, `Desktop development with C++`, `Universal Windows Platform development`, `Game development with Unity`.
+![alt text](image.png)
+![alt text](image-1.png)
 
+`Download #2`: **Unity Hub & Unity Editor**  
+[Unity Hub Download](https://unity.com/download)  
+[Unity Editor Download](https://unity.com/releases/editor/archive)  
+We have tested our system with `Unity Editor 2020.3.42f1`
 
-2. Unity
+### 3.2.1 **ROS: ROS-TCP-Endpoint**  
+This tool is for connecting ROS and Unity through TCP-network in `ROS`.  
+`git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git`
 
+### 3.2.2 **Unity: ROS-TCP-Connector**: 
+This tool is for connecting ROS and Unity through TCP-network in `Unity`.  
+Follow Installation Guide [Link](https://github.com/Unity-Technologies/ROS-TCP-Connector)
 
-2.1 Install Unity 2020.3.42f1
-
-
-2.2 Install ROS-TCP-Connector
-
-
-2.2.1 Using Unity 2020.2 or later, open the Package Manager from "Window" -> "Package Manager".
-
-
-2.2.2 In the Package Manager window, find and click the "+" button in the upper lefthand corner of the window. Select "Add package from git URL...."
-
-
-2.2.3 Enter https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
-
-
-2.3 Install MRTK 2
+### 3.2.3 Install MRTK 2
+[Microsoft MRKT2 Guide](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/packages/mrtk-packages?view=mrtkunity-2022-05)
 
 
 ## Contributing
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (Grant No. 2022M1A3C2085237). 
 
-hl2ss by jdibenes
-https://github.com/jdibenes/hl2ss
-
 ## License
 This project is licensed under the MIT License – see the [LICENSE](./LICENSE.md) file for details.
 
-
 ## Contact
-Hanbeom Chang - hanbeom.chang@stonybrook.edu
+Hanbeom Chang - hanbeom.chang@stonybrook.edu  
 MEIC Lab. - https://www.meic-lab.com/
