@@ -71,6 +71,26 @@ Follow Installation Guide [Link](https://github.com/Unity-Technologies/ROS-TCP-C
 ### 3.2.3 Install MRTK 2
 [Microsoft MRKT2 Guide](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/packages/mrtk-packages?view=mrtkunity-2022-05)
 
+### **3.3 Configuration**
+
+### 3.3.1 Clone the entire repository  
+`git clone https://github.com/hbj9807/LiMRSF.git`
+
+### 3.3.2 ROS Settings
+`ROS_files` folder goes to your ROS system, and runned with ROS-TCP-Endpoint.  
+
+### 3.3.3 ROS-Unity TCP Settings
+After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab` set `ROS IP Address` and `ROS Port` to the setting of your own `ROS-TCP-Endpoint's` IP and Port.  
+
+![alt text](image-2.png)
+
+## Validation With Our Data
+1. Download our `Google Drive Dataset`: ~~
+
+2. Run `mesh_higlight.py` in ROS to generate a `Mesh with Highlighted Result`.
+
+3. Run `simplify_transfer.py` to simplify the mesh and transfer to `Unity` side.
+
 
 ## Contributing
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (Grant No. 2022M1A3C2085237). 
