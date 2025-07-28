@@ -16,9 +16,10 @@ A demo video can be found in our [Youtube](https://youtu.be/lripMy5RFcs?si=86RJg
 1. [Description](#description)  
 2. [Features](#features)  
 3. [Prerequisites & Installation](#prerequisites)  
-4. [Contributing](#contributing)  
-5. [License](#license)  
-6. [Contact](#contact)
+4. [Validation With Our Data](#validation-with-our-data)
+5. [Contributing](#contributing)  
+6. [License](#license)  
+7. [Contact](#contact)
 
 ## 1. Description
 Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D mesh on top of Mixed Reality Headset (HoloLens 2) in real-time to detect blind spot in SLAM process and feedback intuitively to the user.
