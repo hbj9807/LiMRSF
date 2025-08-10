@@ -27,7 +27,7 @@ Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D m
 `Main objective` is to
 - Point cloud registration error visualization
 - ROS-TCP Server for data transfer
-- Reduce time for site revisit
+- Reduce time for site revisit with Human-in-the-Loop
 
 ## 2. Features
 Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (`.ply`) with detected blind spots.
@@ -69,7 +69,7 @@ This tool is for connecting ROS and Unity through TCP-network in `ROS`.
 This tool is for connecting ROS and Unity through TCP-network in `Unity`.  
 Follow Installation Guide [Link](https://github.com/Unity-Technologies/ROS-TCP-Connector)
 
-### 3.2.3 Install MRTK 2
+### 3.2.3 Install MRTK 2 in the Unity Scene
 [Microsoft MRKT2 Guide](https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/packages/mrtk-packages?view=mrtkunity-2022-05)
 
 ### **3.3 Configuration**
