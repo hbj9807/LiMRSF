@@ -86,7 +86,7 @@ After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab` set `RO
 ![alt text](image-2.png)
 
 ## Validation With Our Data
-1. Download our `Google Drive Dataset`: https://drive.google.com/drive/folders/1FZG2QhUDr2IBQot22F3hRHcNOFYnMR3v?usp=drive_link
+1. Download our `Google Drive Dataset`: https://drive.google.com/drive/u/1/folders/1et2u-7XFjwj3Bzm7ewrv6NoXhvH_1SC1
 
 2. Run `mesh_higlight.py` in ROS to generate a `Mesh with Highlighted Result`.
 
