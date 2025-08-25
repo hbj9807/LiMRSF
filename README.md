@@ -9,7 +9,9 @@ Indoor SLAM often suffers from issues such as scene drifting, double walls, and 
 
 The paper can be found in [Arxiv](https://arxiv.org/abs/2411.12514).
 
-A demo video can be found in our [Youtube](https://youtu.be/lripMy5RFcs?si=86RJgNUZksLTAuX1)
+A demo video can be found on our [YouTube](https://youtu.be/lripMy5RFcs?si=86RJgNUZksLTAuX1)
+
+An explanatory video presentation can be found on our [YouTube](https://youtu.be/3EbnmCrZffk?si=n-qdLW7e8psmeuPf) 
 
 ## Table of Contents
 
@@ -22,7 +24,7 @@ A demo video can be found in our [Youtube](https://youtu.be/lripMy5RFcs?si=86RJg
 7. [Contact](#contact)
 
 ## 1. Description
-Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D mesh on top of Mixed Reality Headset (HoloLens 2) in real-time to detect blind spot in SLAM process and feedback intuitively to the user.
+Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps a 3D point cloud or 3D mesh on top of a Mixed Reality Headset (HoloLens 2) in real-time to detect blind spots in the SLAM process and feedback intuitively to the user.
 
 `Main objective` is to
 - Point cloud registration error visualization
@@ -31,8 +33,8 @@ Our `LiMRSF` (LiDAR-MR-RGB Sensor Fusion) system overlaps 3D point cloud or 3D m
 
 ## 2. Features
 Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (`.ply`) with detected blind spots.
-- **ROS**: Opens ROS-TCP server and transfer data (blind spot highlighted mesh)
-- **Unity**: Deployed in app for visualizing highlighted mesh in holograms
+- **ROS**: Opens ROS-TCP server and transfers data (blind spot highlighted mesh)
+- **Unity**: Deployed in the app for visualizing the highlighted mesh in holograms
 
 ## 3. Prerequisites & Installation
 
@@ -52,7 +54,7 @@ Unity scene for MR headset (HoloLens 2) to visualize transmitted mesh (`.ply`) w
 
 **OS #2**: `Windows 10`  
 `Download #1`: **Visual Studio 2019**  
-Select `.Net desktop development`, `Desktop development with C++`, `Universal Windows Platform development`, `Game development with Unity`.
+Select `.NET desktop development`, `Desktop development with C++`, `Universal Windows Platform development`, `Game development with Unity`.
 ![alt text](image.png)
 ![alt text](image-1.png)
 
@@ -62,11 +64,11 @@ Select `.Net desktop development`, `Desktop development with C++`, `Universal Wi
 We have tested our system with `Unity Editor 2020.3.42f1`
 
 ### 3.2.1 **ROS: ROS-TCP-Endpoint**  
-This tool is for connecting ROS and Unity through TCP-network in `ROS`.  
+This tool is for connecting ROS and Unity through TCP network in `ROS`.  
 `git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git`
 
 ### 3.2.2 **Unity: ROS-TCP-Connector**: 
-This tool is for connecting ROS and Unity through TCP-network in `Unity`.  
+This tool is for connecting ROS and Unity through TCP network in `Unity`.  
 Follow Installation Guide [Link](https://github.com/Unity-Technologies/ROS-TCP-Connector)
 
 ### 3.2.3 Install MRTK 2 in the Unity Scene
@@ -78,10 +80,10 @@ Follow Installation Guide [Link](https://github.com/Unity-Technologies/ROS-TCP-C
 `git clone https://github.com/hbj9807/LiMRSF.git`
 
 ### 3.3.2 ROS Settings
-`ROS_files` folder goes to your ROS system, and runned with ROS-TCP-Endpoint.  
+`ROS_files` folder goes to your ROS system, and run with ROS-TCP-Endpoint.  
 
 ### 3.3.3 ROS-Unity TCP Settings
-After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab` set `ROS IP Address` and `ROS Port` to the setting of your own `ROS-TCP-Endpoint's` IP and Port.  
+After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab`, set `ROS IP Address` and `ROS Port` to the settings of your own `ROS-TCP-Endpoint's` IP and Port.  
 
 ![alt text](image-2.png)
 
