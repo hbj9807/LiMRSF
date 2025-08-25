@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Hanbeom Chang, M.S.
+Research Assistant of MEIC Laboratory
+Department of Mechanical Engineering
+The State University of New York, Korea (SUNY Korea)
+Email: hanbeom.chang@stonybrook.edu
+Website: https://www.meic-lab.com
+
 Blind Spot Evaluation (GT-free, proxy-based) — Multi-dataset Runner with tqdm
 
 What this does
