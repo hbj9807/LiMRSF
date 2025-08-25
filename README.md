@@ -89,8 +89,9 @@ After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab`, set `R
 
 ## Validation With Our Data
 1. Download our `Google Drive Dataset`: https://drive.google.com/drive/u/1/folders/1et2u-7XFjwj3Bzm7ewrv6NoXhvH_1SC1
+All the evaluated data (.csv) are in the `Evaluation` folder.
 
-2. Run `LiMRSF.py` in your ROS machine to generate `Mesh with Highlighted Result` and `Visualization in HoloLens 2`.
+3. Run `LiMRSF.py` in your ROS machine to generate `Mesh with Highlighted Result` and `Visualization in HoloLens 2`.
 Confirm that your HoloLens 2 and ROS-TCP-Endpoint are connected with the same IP address.
 
 4. Run `blindspot_eval_test.py` in any machine (ROS, Windows) to evaluate the blind spot detection precision.
