@@ -88,9 +88,11 @@ After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab` set `RO
 ## Validation With Our Data
 1. Download our `Google Drive Dataset`: https://drive.google.com/drive/u/1/folders/1et2u-7XFjwj3Bzm7ewrv6NoXhvH_1SC1
 
-2. Run `mesh_higlight.py` in ROS to generate a `Mesh with Highlighted Result`.
+2. Run `LiMRSF.py` in your ROS machine to generate `Mesh with Highlighted Result` and `Visualization in HoloLens 2`.
 
-3. Run `simplify_transfer.py` to simplify the mesh and transfer to `Unity` side.
+3. Run `blindspot_eval_test.py` in any machine (ROS, Windows) to evaluate the blind spot detection precision.
+
+4. Run `similarity_eval.py` in any machine (ROS, Windows) to evaluate the similarity between `Highlighted Mesh` and `Simplified Mesh`.
 
 
 ## Contributing
