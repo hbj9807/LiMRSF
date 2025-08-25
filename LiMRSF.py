@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """
-limrsf_mesh_pipeline.py
+LiMRSF.py
+
+by Hanbeom Chang, M.S.
+Research Assistant of MEIC Laboratory
+Department of Mechanical Engineering
+The State University of New York, Korea (SUNY Korea)
+Email: hanbeom.chang@stonybrook.edu
+Website: https://www.meic-lab.com
 
 End-to-end LiMRSF mesh pipeline in ONE node:
 
