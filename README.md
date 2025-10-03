@@ -88,7 +88,7 @@ After installing `Unity` in `Windows platform`, in `ROSConnectionPrefab`, set `R
 ![alt text](image-2.png)
 
 ## Validation With Our Data
-1. Download our `Google Drive Dataset`: https://drive.google.com/drive/u/1/folders/1et2u-7XFjwj3Bzm7ewrv6NoXhvH_1SC1
+1. Download our `Google Drive Dataset`: [https://drive.google.com/drive/u/1/folders/1et2u-7XFjwj3Bzm7ewrv6NoXhvH_1SC1](https://drive.google.com/drive/folders/1C-asrQ4nQnr937TkHoksUBUz2xdc7tX8?usp=sharing)
 All the evaluated data (.csv) are in the `Evaluation` folder.
 
 3. Run `LiMRSF.py` in your ROS machine to generate `Mesh with Highlighted Result` and `Visualization in HoloLens 2`.
