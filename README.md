@@ -106,5 +106,5 @@ This work was supported by the National Research Foundation of Korea (NRF) grant
 This project is licensed under the MIT License – see the [LICENSE](./LICENSE.md) file for details.
 
 ## Contact
-Hanbeom Chang - hanbeom.chang@stonybrook.edu  
+Hanbeom Chang - hanbeom.chang@stonybrook.edu, hbj9807@gmail.com  
 MEIC Lab. - https://www.meic-lab.com/
